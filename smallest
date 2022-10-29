@@ -1,0 +1,4 @@
+import sys
+ls = sys.argv
+ls.sort()
+print(ls[1])
