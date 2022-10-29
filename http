@@ -1,0 +1,7 @@
+import requests
+import sys
+try:
+    r = requests.head(sys.argv)
+    print(r.status_code)
+except requests.ConnectionError:
+    print("failed to connect")
