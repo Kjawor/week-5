@@ -1,0 +1,12 @@
+import statistics
+import sys
+
+def tempc(*y):
+    for i in y:
+        print(i, "C")
+
+    print(max(y))
+    print(min(y))
+    print(statistics.mean(y))
+
+print(tempc(sys.argv))
